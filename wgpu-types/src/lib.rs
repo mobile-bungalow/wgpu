@@ -1143,7 +1143,7 @@ pub enum VertexFormat {
 }
 
 impl VertexFormat {
-    pub fn size(&self) -> u64 {
+    pub const fn size(&self) -> u64 {
         match self {
             VertexFormat::Uchar2
             | VertexFormat::Char2
